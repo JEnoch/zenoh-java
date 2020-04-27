@@ -159,6 +159,18 @@
 
   <profiles>
     <profile>
+      <!-- For deployment to Github packages -->
+      <id>github</id>
+      <distributionManagement>
+        <repository>
+          <id>github</id>
+          <name>GitHub Packages</name>
+          <url>https://maven.pkg.github.com/JEnoch/zenoh-java</url>
+        </repository>
+      </distributionManagement>
+    </profile>
+
+    <profile>
       <!-- For deployment to Maven Central via oss.sonatype.org -->
       <id>ossrh</id>
 
